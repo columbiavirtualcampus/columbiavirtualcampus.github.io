@@ -14,8 +14,9 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
@@ -36,13 +37,25 @@
       <div style="font-family: 'Roboto Mono', monospace;" class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">JOIN US</a>
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#about" style="font-size: 16px;">Join Us</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#schedule">Schedule</a>
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#prizes" style="font-size: 16px;">Prizes</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#connect">Connect</a>
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#schedule" style="font-size: 16px;">Schedule</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#speakers" style="font-size: 16px;">Speakers</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#judges" style="font-size: 16px;">Judges</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#mentors" style="font-size: 16px;">Mentors</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#connect" style="font-size: 16px;">Connect</a>
           </li>
         </ul>
       </div>
@@ -52,23 +65,28 @@
   <header style="vertical-align:center;background-position: center center;background-image:url('./img/masthead-02.png');background-size: 100%;background-repeat: no-repeat;display: block;" class="masthead  bg-primary text-white text-center">
     <div styleclass="container d-flex align-items-center flex-column">
 
-      
+
       <!-- <img class="masthead-avatar mb-5" style="width:50%" src="img/dots-02.png" alt=""> -->
 
-        
+
         <div style="padding-top:20px;color:#29696D;font-size:38px;font-weight:100;font-family: 'Poppins', sans-serif;">Columbia University</div>
         <div style="color:#29696D;font-size:70px;font-weight:500;font-family: 'Poppins', sans-serif;">VIRTUAL CAMPUS</div>
         <div style="color:#29696D;font-size:38px;font-weight:100;font-family: 'Poppins', sans-serif;"> Design Challenge</div>
-
+        <section id="scroll-arrow" style="margin-top: 120px;" style="position: absolute;">
+          <a href="#about" class="js-scroll-trigger link lead" style="text-decoration: none;">
+            <i class="fas fa-chevron-down" style="font-size: 36px;"></i>
+            <p>Scroll Down</p>
+          </a>
+        </section>
     </div>
   </header>
 
   <!-- Masthead -->
-<!--   <header style="vertical-align: middle; background-image:url('./img/masthead-02.png');background-size: 100%;background-repeat: no-repeat;" class="d-flex bg-primary masthead text-white text-center"> -->
-<!--   <header class="d-flex bg-primary masthead text-white text-center">
+  <!--   <header style="vertical-align: middle; background-image:url('./img/masthead-02.png');background-size: 100%;background-repeat: no-repeat;" class="d-flex bg-primary masthead text-white text-center"> -->
+  <!--   <header class="d-flex bg-primary masthead text-white text-center">
     <div class="container d-flex align-items-center flex-column">
 
-      
+
       <img class="masthead-avatar" style="width:100%; opacity: .3" src="img/dots-02.png" alt="">
 
         <div style="position: absolute;">
@@ -80,13 +98,13 @@
     </div>
   </header> -->
 
-<!--   <header class="masthead bg-primary text-white text-center" style="padding-top: 0px; padding-bottom: 0px">
+  <!--   <header class="masthead bg-primary text-white text-center" style="padding-top: 0px; padding-bottom: 0px">
     <div class="container d-flex align-items-center flex-column" style="  position: relative;
   text-align: center;
   color: white;">
-      
+
       <img class="masthead-avatar mb-5" style="padding-top:300px;padding-bottom:120px;width:100%; opacity: .3" src="img/dots-02.png" alt="">
-     
+
       <div style="  position: absolute;
   top: 50%;
   left: 50%;
@@ -108,38 +126,63 @@
       <!-- Portfolio Grid Items -->
       <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif; " class="row">
         <div class="col-md-12" style="text-align: center">
-        Want to help with the COVID-19 crisis from home? <br> 
-        Join us to address the challenges of remote living.<br>
-        Together, we will design and build virtual solutions to all aspects of campus life.<br>
-
+        Our <strong> mission </strong> is to address the challenges of remote living.<br>
+        <br>
+        Through the next three days, we will be building you and your friends a <strong>virtual campus</strong>. <br>
+        <br>
+        One that satisfies your craving for <strong> Joe's coffee </strong>and late nights at <strong>Butler</strong>. <br>
+        A virtual environment that you can share with <strong>friends </strong>playing board games, <br>
+        discussing workouts, or even opening up about the challenges you face. <br>
+        <br>
+        And, of course, a place to find resources for <strong>COVID</strong>, <strong>mental health</strong>, <strong>international students</strong>, etc. <br>
+        <br>
+        <strong>$500 prizes </strong> will be awarded for the winning designs. More information below.<br>
         <br>
         <span style="font-weight: bold">When:</span> April 4, 5 and 6<br>
-        <span style="font-weight: bold">Where:</span> Zoom<br>
+        <span style="font-weight: bold">Where:</span> Zoom Link will be posted<br>
         <span style="font-weight: bold">Who:</span> All Columbia and Barnard students<br>
-        <span style="font-weight: bold">Register:</span> <a href="https://www.facebook.com/events/1020511525011664/" target="_blank">On the Facebook Page</a><br>
+        <span style="font-weight: bold">Register:</span> <a href="https://www.facebook.com/events/1020511525011664/" target="_blank">On the Facebook Page</a> and/or <a href="https://www.facebook.com/events/1020511525011664/" target="_blank"> Slack</a><br>
         <br>
         No experience necessary. <br>
         We will introduce you to design, help you form teams, and provide expert mentors.<br>
         <br>
-        $500 prizes will be awarded for the winning designs.<br>
+
         <br>
-        GET INVOLVED<br>
-        Students, please register <a href="https://www.facebook.com/events/1020511525011664/">here.</a><br>
-          Sponsors, please reach out to Sharon Jin (sj2846@columbia.edu)<br>
-          <br>
-          FACULTY ORGANIZERS<br>
-          Prof. Lydia Chilton<br>
-        Prof. Eugene Wu<br>
-        <br>
-        STUDENT ORGANIZERS<br>
-        
-        Gitika Bose, Tejit Pabari, Anthony Krivonos, Archit Choudhury, <br>
-        Rupal Gupta, Julia Sheth, Maddy Placik, Julio Gomez, Sharon Lin
-        
+
         </div>
-        
+
       </div>
       <br>
+    </div>
+  </section>
+
+      <section class="page-section about" id="prizes" style="background-color: #F7F7F7;">
+        <div class="container">
+
+          <!-- Portfolio Section Heading -->
+          <div style="padding-bottom:60px;color:#F47C20;font-size:30px;font-weight:400;font-family: 'Roboto Mono', sans-serif;" class="text-center">PRIZES</div>
+
+          <!-- Portfolio Grid Items -->
+          <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif; " class="row">
+            <div class="col-md-12" style="text-align: center">
+
+            <strong>$500 prizes </strong> will be awarded to EACH of the winning designs. <br>
+            <br>
+            Prizes will be awarded according to the following four categories: <br>
+            <strong> Biggest Impact </strong> <br>
+            <strong> Best Focused impact </strong> <br>
+            <strong> Most fun </strong> <br>
+            <strong> Best Design Insight </strong> <br>
+            <br>
+            We have an skilled and diverse panel of judges who will evaluate your <br>
+            designs based on how promising they are in each of the above categories.<br>
+            <br>
+            Nonetheless, we are excited to see ALL your designs and put them up on the official Virtual Campus website.
+
+            </div>
+
+          </div>
+          <br>
 
 <!--       <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif;">
         <ul>
@@ -156,14 +199,14 @@
         No experience necessary. <br>
         We will introduce you to design, help you form teams, and provide expert mentors.
       </div> -->
-<!-- 
+<!--
       <br>
       <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif;" class="row ">
-        
+
       </div><br>
 
       <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:400;font-family: 'Poppins', sans-serif;" class="row">
-        
+
       </div>
       <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif;" class="row">
         <span>Students, please register <a href="https://www.facebook.com/events/1020511525011664/">here.</a>
@@ -172,9 +215,6 @@
       <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif;" class="row">
         Sponsors, please reach out to Sharon Jin (sj2846@columbia.edu) to get involved.
       </div>
-
-      
-
       <br><br>
 
         <div style="padding-left:20px;color:#29696D;font-size:15px;font-weight:400;font-family: 'Poppins', sans-serif;" class="row text-center">
@@ -200,31 +240,43 @@
   <!-- <div style="text-align: center;"><img height="75" src="./img/divider-08.png"/></div> -->
 
   <!-- SCHEDULE Section -->
-  <section style="background-color: #F7F7F7;" class="page-section mb-0" id="schedule">
+  <section class="page-section mb-0" id="schedule">
     <div class="container">
 
       <!-- SCHEDULE Section Heading -->
       <div style="padding-bottom:60px;color:#F47C20;font-size:30px;font-weight:400;font-family: 'Roboto Mono', sans-serif;" class="text-center">SCHEDULE</div>
-
+      <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif; " class="row">
+        <div class="col-md-12" style="text-align: center">
+          All events will begin on the same Zoom ID/link, which will be released on Saturday at 11:50 AM EST.
+        </div>
+        <div class="col-md-12" style="text-align: center">
+          All times in the schedule are in EST.
+        </div>
+  </div>
       <!-- About Section Content -->
-      <div class="row">
+      <div class="row" style="margin-top:50px">
         <div class="col-md-4">
           <div style="text-align:center;padding-bottom:10px;color:#29696D;font-size:18px;font-weight:600;font-family: 'Poppins', sans-serif;">APRIL 4</div><hr>
 
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >11:50 - 12:00 PM </span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Join Zoom Call</span><br><br>
 
-          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >12 - 1:00 PM </span><br>
-          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Kick-off</span><br><br>
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >12 - 12:30 PM </span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Kick-off: Presentation and Info Session</span><br><br>
 
-          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >1:30 - 2:30 PM </span><br>
-          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Team formation</span><br><br>
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >12:30 - 1:10 PM </span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Speaker Talk: Design Process by Prof. Lydia Chilton</span><br><br>
 
-          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >2:30 - 2:45 PM </span><br>
-          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Registration</span><br><br>
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >1:10 - 2:00 PM </span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Team Formation and Day 1 Registration</span><br><br>
 
-          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >3:00 PM onwards </span><br>
-          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Develop with your team (and mentors)</span><br><br>
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >2:00 - 3:00 PM  </span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Student Panel: Student Experience with Design and Teamwork</span><br><br>
 
-          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >4:00 - 6:00 PM </span><br>
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >3:00 PM Onwards </span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Get Designing!</span><br><br>
+
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >6:00 - 8:00 PM </span><br>
           <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Mentor check-in</span><br><br>
 
           <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >11:00 PM - Midnight </span><br>
@@ -234,16 +286,19 @@
         <div class="col-md-4">
           <div style="text-align:center;padding-bottom:10px;color:#29696D;font-size:18px;font-weight:600;font-family: 'Poppins', sans-serif;">APRIL 5</div><hr>
 
-          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >Noon </span><br>
-          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Kick-off</span><br><br>
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >As early as possible </span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Keep Designing </span><br><br>
+
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >12:00 1:00 PM</span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Speaker Talk: Humanistic Psychology by Scott Kaufman </span><br><br>
 
           <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >1:30 - 1:45 PM </span><br>
-          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Registration</span><br><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Day 2 Registration (Fill the form)</span><br><br>
 
-          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >2:00 PM onwards </span><br>
-          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Develop with your team (and mentors)</span><br><br>
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >TBD </span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Speaker Talk: AI vs. COVID by EVQLV Founder, Andrew Satz </span><br><br>
 
-          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >3:00 - 5:00 PM  </span><br>
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >4:00 - 6:00 PM  </span><br>
           <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Mentor check-in</span><br><br>
 
           <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >11:00 PM - Midnight </span><br>
@@ -254,10 +309,10 @@
           <div style="text-align:center;padding-bottom:10px;color:#29696D;font-size:18px;font-weight:600;font-family: 'Poppins', sans-serif;">APRIL 6</div><hr>
 
           <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >Noon </span><br>
-          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Kick-off</span><br><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Speaker Talk: Community Impact by Yohana </span><br><br>
 
           <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >1:30 - 1:45 PM </span><br>
-          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Registration</span><br><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Day 3 Registrion (Fill the form)</span><br><br>
 
           <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >2:00 PM onwards </span><br>
           <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Develop with your team (and mentors)</span><br><br>
@@ -265,44 +320,399 @@
           <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >6:30 - 7:00 PM </span><br>
           <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Project submission</span><br><br>
 
-          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >7:00 - 9:00 PM </span><br>
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >7:00 - 8:00 PM </span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Lionbase Panel: Startup and Project Management</span><br><br>
+
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >7:00 - 8:00 PM </span><br>
           <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Judging</span><br><br>
 
-          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >9:00 - 10:00 PM </span><br>
-          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Closing ceremony</span><br><br>
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >8:00 - 8:30 PM </span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Closing Remarks by Prof. Harry West </span><br><br>
+
+          <span style="color:#F47C20;font-weight:300;font-family: 'Roboto Mono', sans-serif;" >8:30 - 9:00 PM </span><br>
+          <span style="color:#29696D;font-weight:400;font-family: 'Poppins', sans-serif;" >Closing Ceremony: Prizes Awarded </span><br><br>
 
         </div>
-      
+
+      </div>
+
+    </div>
+  </section>
+
+<!--  <a href="#"><i class="fab fa-fw fa-facebook-f"></i></a>-->
+<!--  <a href="#"><i class="fab fa-fw fa-twitter"></i></a>-->
+<!--  <a href="#"><i class="fab fa-fw fa-instagram"></i></a>-->
+<!--  <a href="#"><i class="fab fa-fw fa-linkedin"></i></a>-->
+
+  <!-- Speakers Section -->
+  <section class="page-section" id="speakers" style="background-color: #F7F7F7;">
+
+    <div class="container">
+
+      <!-- Judges Section Heading -->
+      <div style="padding-bottom:60px;color:#F47C20;font-size:36px;font-weight:400;font-family: 'Roboto Mono', sans-serif;" class="text-center">SPEAKERS</div>
+
+      <!-- Judges Section List -->
+      <div style="text-align: center; margin-bottom: 40px" class="row" >
+
+        <div class="col-lg-12 flex mx-auto text-center justify-content-center">
+
+          <div class="tc w-third mr3 pa2 hover-bg-washed-blue">
+            <img src="./img/lydia.png" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Lydia Chilton</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D; height: 230px">
+              Lydia Chilton is an Assistant Professor in the Computer Science Department at Columbia University.
+              She is an early pioneer in crowdsourcing complex tasks on Mechanical Turk.
+              Currently she leads the Computational Design Lab, whose goal is to build AI tools that enhance people's productivity.
+              She is also teaching courses such as UI-Design and Advanced Design at Columbia, and is the wind behind our wings as our
+              Designathon’s faculty mentor.
+            </p>
+          </div>
+
+          <div class="tc mr3 w-third pa2 hover-bg-washed-blue">
+            <img src="./img/kauffman.jpg" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Scott Barry Kaufman">
+            <h1 class="f3 mb2">Scott Barry Kaufman</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D; height: 230px">
+              Scott Barry Kaufman is a humanistic psychologist exploring the depths of human potential.
+              His interest lies in using his research to help all kinds of minds live a creative, fulfilling,
+              and self-actualized life. In 2015, he was named one of “50 Groundbreaking Scientists who are
+              changing the way we see the world” by Business Insider.
+            </p>
+          </div>
+
+          <div class="tc mr3 w-third pa2 hover-bg-washed-blue">
+            <img src="./img/yohana.jpg" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Yohana Tekeste">
+            <h1 class="f3 mb2">Yohana Tekeste</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D; height: 230px">
+              Yohana Tesfamariam Tekeste is an experienced Staff Associate with a demonstrated history of working in the higher education industry.
+              Yohana is interested in the development of various informative tools to help agricultural stakeholders in their
+              decision making processes. She received a Master's Degree focused in Biotechnology from Columbia.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="text-align: center;" class="row">
+
+        <div class="col-lg-12 flex mx-auto justify-content-center">
+
+          <div class="tc w-third mr3 pa2 hover-bg-washed-blue">
+            <img src="./img/andrew.png" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Andrew Satz</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D; height: 230px">
+              Co-founder and CEO of EVQLV. He is passionate about using machine learning to advance, evolve,
+              and modernize biotech and the pharmaceutical industry. Skilled in the application of advanced
+              technologies, machine learning, drug discovery, preclinical research, clinical studies,
+              regulatory pathways, business process improvement, and leadership.
+            </p>
+          </div>
+
+          <div class="tc mr3 w-third pa2 hover-bg-washed-blue">
+            <img src="./img/harry.png" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Harry West</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D; height: 230px">
+              Harry West is a Professor of Practice in Mechanical Engineering, Industrial Engineering, and Operations Research.
+              He is interested in the intersection of design, data and behavior change with a focus on developing new ways to
+              reduce consumption. Harry was formerly the CEO of frog, Senior Partner at Prophet, and CEO at Continuum,
+              developing new products with P&G such as Swiffer and ThermaCare.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Judges Section -->
+  <section class="page-section" id="judges" >
+
+    <div class="container">
+
+      <!-- Judges Section Heading -->
+      <div style="padding-bottom:60px;color:#F47C20;font-size:36px;font-weight:400;font-family: 'Roboto Mono', sans-serif;" class="text-center">JUDGES</div>
+
+      <!-- Judges Section List -->
+      <div style="text-align: center; margin-bottom: 40px" class="row" >
+
+        <div class="col-lg-12 flex mx-auto text-center justify-content-center">
+
+          <div class="tc w-third mr3 pa2 hover-bg-washed-blue">
+            <img src="./img/harry.png" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Harry West</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D; height: 230px">
+              Harry West is a Professor of Practice in Mechanical Engineering, Industrial Engineering, and Operations Research.
+              He is interested in the intersection of design, data and behavior change with a focus on developing new ways to
+              reduce consumption. Harry was formerly the CEO of frog, Senior Partner at Prophet, and CEO at Continuum,
+              developing new products with P&G such as Swiffer and ThermaCare.
+            </p>
+          </div>
+
+          <div class="tc mr3 w-third pa2 hover-bg-washed-blue">
+            <img src="./img/sarah.png" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Scott Barry Kaufman">
+            <h1 class="f3 mb2">Sarah Morrison Smith</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D; height: 230px">
+              Sarah Morrison Smith is a Roman Family Teaching and Research Fellow at Barnard with a focus on Human-Centered Computing.
+              Her interests are alternative input modalities via gestural interfaces, e-Science and data sharing in life sciences,
+              and usable security. She has written many publications and was a reviewer in conferences such as the ACM International
+              Conference on Intelligent User Interfaces.
+            </p>
+          </div>
+
+          <div class="tc mr3 w-third pa2 hover-bg-washed-blue">
+            <img src="./img/yohana.jpg" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Yohana Tekeste">
+            <h1 class="f3 mb2">Yohana Tekeste</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D; height: 230px">
+              Yohana Tesfamariam Tekeste is an experienced Staff Associate with a demonstrated history of working in the higher education industry.
+              Yohana is interested in the development of various informative tools to help agricultural stakeholders in their
+              decision making processes. She received a Master's Degree focused in Biotechnology from Columbia.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="text-align: center;" class="row">
+
+        <div class="col-lg-12 flex mx-auto justify-content-center">
+
+          <div class="tc w-third mr3 pa2 hover-bg-washed-blue">
+            <img src="./img/alex.png" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Alex Weintraub</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D; height: 230px">
+              Alex Weintraub is a Core Lecturer for Art Humanities, receiving his Ph.D. in Columbia’s Department of Art
+              History and Archaeology. He has published work in the peer-reviewed journal nonsite, exhibition catalogs
+              for MoMA, and the Fondation Vincent van Gogh Arles. He has also presented at conferences at the
+              Frick Collection, the University of Amsterdam, and the Institut national d’histoire de l’art.
+            </p>
+          </div>
+
+          <div class="tc mr3 w-third pa2 hover-bg-washed-blue">
+            <img src="./img/eugene.png" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Eugene Wu</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D; height: 230px">
+              Eugene Wu is an Assistant Professor of Computer Science at Columbia University.
+              His current research areas are on developing tools to help provide explanations for anomalous
+              data or analysis results. He was granted the VLDB 2018 10-year test of time award,
+              best-of-conference citations at ICDE and VLDB, the SIGMOD 2016 best demo award, the NSF CAREER,
+              and Google and Amazon faculty awards.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Mentor Section -->
+  <section class="page-section" id="mentors" style="background-color: #F7F7F7;">
+
+    <div class="container">
+
+      <div style="padding-bottom:60px;color:#F47C20;font-size:36px;font-weight:400;font-family: 'Roboto Mono', sans-serif;" class="text-center">MENTORS</div>
+      <div>
+        <h1 class="f3 mb2">Faculty Mentors</h1>
+        <div class="row">
+          <h2 class="f4 fw4 gray mh3" style="text-transform: capitalize; font-weight: 600">Lydia Chilton</h2>
+          <h2 class="f4 fw4 gray" style="margin-right: 0">
+            <span>-</span><span class="mh3" style="text-transform: capitalize">Ideas, insights framing</span>
+          </h2>
+        </div>
+        <div class="row">
+          <h2 class="f4 fw4 gray mh3" style="text-transform: capitalize; font-weight: 600">Donald Ferguson</h2>
+          <h2 class="f4 fw4 gray" style="margin-right: 0">
+            <span>-</span><span class="mh3" style="text-transform: capitalize">Ideas, insights framing, cloud, apps, Databases</span>
+          </h2>
+        </div>
+        <div class="row">
+          <h2 class="f4 fw4 gray mh3" style="text-transform: capitalize; font-weight: 600">Eugene Wu</h2>
+          <h2 class="f4 fw4 gray" style="margin-right: 0">
+            <span>-</span><span class="mh3" style="text-transform: capitalize">Databases, feedback, insights framing</span>
+          </h2>
+        </div>
+        <div class="row">
+          <h2 class="f4 fw4 gray mh3" style="text-transform: capitalize; font-weight: 600">Yassine Benajiba</h2>
+          <h2 class="f4 fw4 gray" style="margin-right: 0">
+            <span>-</span><span class="mh3" style="text-transform: capitalize">NLP, insights framing, AI, ML</span>
+          </h2>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="f3 mt5">Student Mentors</h1>
+        <div class="row">
+          <h2 class="f4 fw4 gray mh3" style="text-transform: capitalize; font-weight: 600">Sharon Jin</h2>
+          <h2 class="f4 fw4 gray" style="margin-right: 0">
+            <span>-</span><span class="mh3" style="text-transform: capitalize">AI, Python, data science, Databases</span>
+          </h2>
+        </div>
+        <div class="row">
+          <h2 class="f4 fw4 gray mh3" style="text-transform: capitalize; font-weight: 600">Kevin Le</h2>
+          <h2 class="f4 fw4 gray" style="margin-right: 0">
+            <span>-</span><span class="mh3" style="text-transform: capitalize">Operations research, data science, Databases, Python</span>
+          </h2>
+        </div>
+        <div class="row">
+          <h2 class="f4 fw4 gray mh3" style="text-transform: capitalize; font-weight: 600">Gitika Bose</h2>
+          <h2 class="f4 fw4 gray" style="margin-right: 0">
+            <span>-</span><span class="mh3" style="text-transform: capitalize">Data science, AI, React, Firebase</span>
+          </h2>
+        </div>
+        <div class="row">
+          <h2 class="f4 fw4 gray mh3" style="text-transform: capitalize; font-weight: 600">Tejit Pabari</h2>
+          <h2 class="f4 fw4 gray" style="margin-right: 0">
+            <span>-</span><span class="mh3" style="text-transform: capitalize">Databases, AI, App Development, Web Development</span>
+          </h2>
+        </div>
+        <div class="row">
+          <h2 class="f4 fw4 gray mh3" style="text-transform: capitalize; font-weight: 600">Archit Choudhury</h2>
+          <h2 class="f4 fw4 gray" style="margin-right: 0">
+            <span>-</span><span class="mh3" style="text-transform: capitalize">Mobile App Development, Web Development, startups</span>
+          </h2>
+        </div>
+        <div class="row">
+          <h2 class="f4 fw4 gray mh3" style="text-transform: capitalize; font-weight: 600">Su Ji</h2>
+          <h2 class="f4 fw4 gray" style="margin-right: 0">
+            <span>-</span><span class="mh3" style="text-transform: capitalize">Product management, software development</span>
+          </h2>
+        </div>
       </div>
 
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="page-section" id="connect">
+  <section class="page-section" id="connect" >
     <div class="container">
 
       <!-- Contact Section Heading -->
-      <div style="padding-bottom:60px;color:#F47C20;font-size:30px;font-weight:400;font-family: 'Roboto Mono', sans-serif;" class="text-center">CONNECT</div>
+      <div style="padding-bottom:60px;color:#F47C20;font-size:30px;font-weight:400;font-family: 'Roboto Mono', sans-serif;" class="text-center">OUR TEAM</div>
 
       <!-- Contact Section Form -->
       <div style="text-align:center;" class="row">
         <div class="col-lg-8 mx-auto">
-          <a class="btn btn-outline-dark btn-social mx-1" href="https://www.facebook.com/events/1020511525011664/">
-            <i class="fab fa-fw fa-facebook-f"></i>
-          </a>
+          <div style="padding-bottom:30px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif;">
+            STUDENT ORGANIZERS
+          </div>
         </div>
+
+        <div style="padding-bottom:20px;" class="row">
+          <div style="margin-right: auto;margin-left: auto;" class="col-sm">
+            <img style="padding-bottom:10px;width:75%;border-top-left-radius: 50% 50%;border-top-right-radius: 50% 50%;border-bottom-right-radius: 50% 50%;border-bottom-left-radius: 50% 50%;"src="./img/team_pics/anthony.jpg"/>
+            <br>
+            <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;">Anthony Krivinos</div>
+          </div>
+          <div style="text-align:center;" class="col-sm">
+            <img style="padding-bottom:10px;width:75%;border-top-left-radius: 50% 50%;border-top-right-radius: 50% 50%;border-bottom-right-radius: 50% 50%;border-bottom-left-radius: 50% 50%;"src="./img/team_pics/archit.jpg"/>
+            <br>
+            <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;">
+              Archit Choudhury</div>
+          </div>
+          <div style="text-align:center;" class="col-sm">
+            <img style="padding-bottom:10px;width:75%;border-top-left-radius: 50% 50%;border-top-right-radius: 50% 50%;border-bottom-right-radius: 50% 50%;border-bottom-left-radius: 50% 50%;"src="./img/team_pics/gitika.jpg"/>
+            <br>
+            <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;">
+              Gitika Bose
+            </div>
+          </div>
+        </div>
+
+        <div style="padding-bottom:20px;" class="row">
+          <div style="margin-right: auto;margin-left: auto;" class="col-sm">
+            <img style="padding-bottom:10px;width:75%;border-top-left-radius: 50% 50%;border-top-right-radius: 50% 50%;border-bottom-right-radius: 50% 50%;border-bottom-left-radius: 50% 50%;"src="./img/team_pics/manasi.jpg"/>
+            <br>
+            <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;">Manasi Sharma</div>
+          </div>
+          <div style="text-align:center;" class="col-sm">
+            <img style="padding-bottom:10px;width:75%;border-top-left-radius: 50% 50%;border-top-right-radius: 50% 50%;border-bottom-right-radius: 50% 50%;border-bottom-left-radius: 50% 50%;"src="./img/team_pics/rupal.jpeg"/>
+            <br>
+            <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;">
+              Rupal Gupta</div>
+          </div>
+          <div style="text-align:center;" class="col-sm">
+            <img style="padding-bottom:10px;width:75%;border-top-left-radius: 50% 50%;border-top-right-radius: 50% 50%;border-bottom-right-radius: 50% 50%;border-bottom-left-radius: 50% 50%;"src="./img/team_pics/sharon.jpeg"/>
+            <br>
+            <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;">
+              Sharon Jin
+            </div>
+          </div>
+
+        </div>
+
+        <div style="padding-bottom:20px;" class="row">
+          <div style="text-align:center;" class="col-sm">
+            <img style="padding-bottom:10px;width:75%;border-top-left-radius: 50% 50%;border-top-right-radius: 50% 50%;border-bottom-right-radius: 50% 50%;border-bottom-left-radius: 50% 50%;"src="./img/team_pics/tejit.jpg"/>
+            <br>
+            <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;">
+              Tejit Pabari</div>
+          </div>
+          <div style="text-align:center;" class="col-sm">
+            <img style="padding-bottom:10px;width:75%;border-top-left-radius: 50% 50%;border-top-right-radius: 50% 50%;border-bottom-right-radius: 50% 50%;border-bottom-left-radius: 50% 50%;"src="./img/team_pics/julia.jpg"/>
+            <br>
+            <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;">
+              Julia Sheth</div>
+          </div>
+          <div style="text-align:center;" class="col-sm">
+            <img style="padding-bottom:10px;width:75%;border-top-left-radius: 50% 50%;border-top-right-radius: 50% 50%;border-bottom-right-radius: 50% 50%;border-bottom-left-radius: 50% 50%;"src="./img/team_pics/maddy.jpg"/>
+            <br>
+            <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;">
+              Maddy Placik</div>
+          </div>
+        </div>
+
+        <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;padding-bottom:40px;" class="col-lg-8 mx-auto">
+          Not pictured: Julio Gomez
+        </div>
+
+        <div class="col-lg-8 mx-auto">
+          <div style="padding-bottom:30px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif;">
+            FACULTY ORGANIZERS
+          </div>
+        </div>
+
+        <div style="margin-right:auto;margin-left:auto;padding-bottom:20px;" class="row">
+          <div style="margin-right: auto;margin-left: auto;" class="col-6 col-sm">
+            <img style="padding-bottom:10px;width:75%;border-top-left-radius: 50% 50%;border-top-right-radius: 50% 50%;border-bottom-right-radius: 50% 50%;border-bottom-left-radius: 50% 50%;"src="./img/team_pics/lydia.jpg"/>
+            <br>
+            <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;">Prof. Lydia Chilton</div>
+          </div>
+          <div style="text-align:center;" class="col-6 col-sm">
+            <img style="padding-bottom:10px;width:75%;border-top-left-radius: 50% 50%;border-top-right-radius: 50% 50%;border-bottom-right-radius: 50% 50%;border-bottom-left-radius: 50% 50%;"src="./img/team_pics/eugene.jpg"/>
+            <br>
+            <div style="color:#29696D;font-size:14px;font-weight:300;font-family: 'Poppins', sans-serif;">
+              Prof. Eugene Wu</div>
+          </div>
+        </div>
+
       </div>
 
     </div>
   </section>
 
+
   <!-- Copyright Section -->
-  <section style="background-color:#29696D;" class="copyright py-4 text-center text-white">
-    <div class="container">
-      <small>Copyright &copy; Columbia University 2020</small>
+  <footer class="pv4 ph3 ph5-m ph6-l mid-gray" style="background-color: #29696D; color: white;">
+    <small class="f6 db tc">© 2020 <b>Columbia University</b>
+    <div class="tc mt3">
+      <a href="#about" title="About" class="f6 dib ph2 link mid-gray dim" style="color: white;">About</a>
+      <a href="#schedule"    title="Schedule" class="f6 dib ph2 link mid-gray dim" style="color: white;">Schedule</a>
+      <a href="#speakers"  title="Speakers" class="f6 dib ph2 link mid-gray dim" style="color: white;">Speakers</a>
+      <a href="#judges"  title="Judges" class="f6 dib ph2 link mid-gray dim" style="color: white;">Judges</a>
+      <a href="#mentors"  title="Mentors" class="f6 dib ph2 link mid-gray dim" style="color: white;">Mentors</a>
+      <a href="#connect"  title="Connect" class="f6 dib ph2 link mid-gray dim" style="color: white;">Connect</a>
     </div>
-  </section>
+  </footer>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-to-top d-lg-none position-fixed ">
