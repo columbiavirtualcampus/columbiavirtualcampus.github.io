@@ -14,8 +14,9 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
@@ -36,39 +37,43 @@
       <div style="font-family: 'Roboto Mono', monospace;" class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">JOIN US</a>
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#about" style="font-size: 16px;">JOIN US</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#schedule">Schedule</a>
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#schedule" style="font-size: 16px;">Schedule</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#team">Our Team</a>
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#team" style="font-size: 16px;">Our Team</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#connect">Connect</a>
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#connect" style="font-size: 16px;">Connect</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger lead hover-bg-washed-blue" href="#judges" style="font-size: 16px;">Judges</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header style="vertical-align:center;background-position: center center;background-image:url('./img/masthead-02.png');background-size: 100%;background-repeat: no-repeat;display: block;" class="masthead  bg-primary text-white text-center">
-    <div styleclass="container d-flex align-items-center flex-column">
-
-      
-      <!-- <img class="masthead-avatar mb-5" style="width:50%" src="img/dots-02.png" alt=""> -->
-
-        
-        <div style="padding-top:20px;color:#29696D;font-size:38px;font-weight:100;font-family: 'Poppins', sans-serif;">Columbia University</div>
+  <header style="vertical-align:center;background-position: center center;background-image:url('./img/masthead-02.png');background-size: 100%;background-repeat: no-repeat;display: block; opacity: 0.9; height: 100vh; background-size: cover;" class="masthead  bg-primary text-white text-center">
+    <div styleclass="container d-flex align-items-center flex-column" style="opacity: 1;">
+        <!-- <img class="masthead-avatar mb-5" style="width:50%" src="img/dots-02.png" alt=""> -->
+        <div style="padding-top:80px;color:#29696D;font-size:38px;font-weight:100;font-family: 'Poppins', sans-serif;">Columbia University</div>
         <div style="color:#29696D;font-size:70px;font-weight:500;font-family: 'Poppins', sans-serif;">VIRTUAL CAMPUS</div>
         <div style="color:#29696D;font-size:38px;font-weight:100;font-family: 'Poppins', sans-serif;"> Design Challenge</div>
-
+        <section id="scroll-arrow" style="margin-top: 120px;" style="position: absolute;">
+          <a href="#about" class="js-scroll-trigger link lead" style="text-decoration: none;">
+            <i class="fas fa-chevron-down" style="font-size: 36px;"></i>
+            <p>Scroll Down</p>
+          </a>
+        </section>
     </div>
   </header>
 
   <!-- Masthead -->
-<!--   <header style="vertical-align: middle; background-image:url('./img/masthead-02.png');background-size: 100%;background-repeat: no-repeat;" class="d-flex bg-primary masthead text-white text-center"> -->
-<!--   <header class="d-flex bg-primary masthead text-white text-center">
+  <!--   <header style="vertical-align: middle; background-image:url('./img/masthead-02.png');background-size: 100%;background-repeat: no-repeat;" class="d-flex bg-primary masthead text-white text-center"> -->
+  <!--   <header class="d-flex bg-primary masthead text-white text-center">
     <div class="container d-flex align-items-center flex-column">
 
       
@@ -83,7 +88,7 @@
     </div>
   </header> -->
 
-<!--   <header class="masthead bg-primary text-white text-center" style="padding-top: 0px; padding-bottom: 0px">
+  <!--   <header class="masthead bg-primary text-white text-center" style="padding-top: 0px; padding-bottom: 0px">
     <div class="container d-flex align-items-center flex-column" style="  position: relative;
   text-align: center;
   color: white;">
@@ -144,7 +149,8 @@
       </div>
       <br>
 
-<!--       <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif;">
+        <!--
+        <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif;">
         <ul>
           <li>Learning</li>
           <li>Mental health</li>
@@ -159,7 +165,7 @@
         No experience necessary. <br>
         We will introduce you to design, help you form teams, and provide expert mentors.
       </div> -->
-<!-- 
+      <!--
       <br>
       <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif;" class="row ">
         
@@ -175,9 +181,6 @@
       <div style="padding-left:20px;color:#29696D;font-size:18px;font-weight:300;font-family: 'Poppins', sans-serif;" class="row">
         Sponsors, please reach out to Sharon Jin (sj2846@columbia.edu) to get involved.
       </div>
-
-      
-
       <br><br>
 
         <div style="padding-left:20px;color:#29696D;font-size:15px;font-weight:400;font-family: 'Poppins', sans-serif;" class="row text-center">
@@ -398,9 +401,24 @@
 
       <!-- Contact Section Form -->
       <div style="text-align:center;" class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-3 mx-auto">
           <a class="btn btn-outline-dark btn-social mx-1" href="https://www.facebook.com/events/1020511525011664/">
             <i class="fab fa-fw fa-facebook-f"></i>
+          </a>
+        </div>
+        <div class="col-lg-3 mx-auto">
+          <a class="btn btn-outline-dark btn-social mx-1" href="https://www.facebook.com/events/1020511525011664/">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+        </div>
+        <div class="col-lg-3 mx-auto">
+          <a class="btn btn-outline-dark btn-social mx-1" href="https://www.facebook.com/events/1020511525011664/">
+            <i class="fab fa-fw fa-instagram"></i>
+          </a>
+        </div>
+        <div class="col-lg-3 mx-auto">
+          <a class="btn btn-outline-dark btn-social mx-1" href="https://www.facebook.com/events/1020511525011664/">
+            <i class="fab fa-fw fa-linkedin"></i>
           </a>
         </div>
       </div>
@@ -408,12 +426,99 @@
     </div>
   </section>
 
-  <!-- Copyright Section -->
-  <section style="background-color:#29696D;" class="copyright py-4 text-center text-white">
+  <!-- Judges Section -->
+  <section class="page-section" id="judges" style="background-color: #F7F7F7;">
+
     <div class="container">
-      <small>Copyright &copy; Columbia University 2020</small>
+
+      <!-- Judges Section Heading -->
+      <div style="padding-bottom:60px;color:#F47C20;font-size:36px;font-weight:400;font-family: 'Roboto Mono', sans-serif;" class="text-center">JUDGES</div>
+
+      <!-- Judges Section List -->
+      <div style="text-align: center;" class="row">
+
+        <div class="col-lg-12 flex mx-auto">
+
+          <div class="tc w-25 outline mr3 pa2 hover-bg-washed-blue">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Mimi W.</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <h2 class="f5 fw4 gray mt0" style="color:#F47C20;">CCO (Chief Cat Officer)</h2>
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D;">
+              Quite affectionate and outgoing.
+              She loves to get chin scratches and will
+              roll around on the floor waiting for you give her more of them.
+            </p>
+            <a href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-fw fa-linkedin"></i></a>
+          </div>
+
+          <div class="tc mr3 w-25 outline pa2 hover-bg-washed-blue">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Mimi W.</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <h2 class="f5 fw4 gray mt0" style="color:#F47C20;">CCO (Chief Cat Officer)</h2>
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D;">
+              Quite affectionate and outgoing.
+              She loves to get chin scratches and will
+              roll around on the floor waiting for you give her more of them.
+            </p>
+            <a href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-fw fa-linkedin"></i></a>
+          </div>
+
+          <div class="tc mr3 w-25 outline pa2 hover-bg-washed-blue">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Mimi W.</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <h2 class="f5 fw4 gray mt0" style="color:#F47C20;">CCO (Chief Cat Officer)</h2>
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D;">
+              Quite affectionate and outgoing.
+              She loves to get chin scratches and will
+              roll around on the floor waiting for you give her more of them.
+            </p>
+            <a href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-fw fa-linkedin"></i></a>
+          </div>
+
+          <div class="tc mr3 w-25 outline pa2 hover-bg-washed-blue">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="grow br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Mimi W.</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+            <h2 class="f5 fw4 gray mt0" style="color:#F47C20;">CCO (Chief Cat Officer)</h2>
+            <p class="lh-copy measure center f6 black-70 pl4 pr4" style="color:#29696D;">
+              Quite affectionate and outgoing.
+              She loves to get chin scratches and will
+              roll around on the floor waiting for you give her more of them.
+            </p>
+            <a href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-fw fa-linkedin"></i></a>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
+
+  <!-- Copyright Section -->
+  <footer class="pv4 ph3 ph5-m ph6-l mid-gray" style="background-color: #29696D; color: white;">
+    <small class="f6 db tc">© 2020 <b>Columbia University</b>
+    <div class="tc mt3">
+      <a href="#about" title="About" class="f6 dib ph2 link mid-gray dim" style="color: white;">About</a>
+      <a href="#schedule"    title="Schedule" class="f6 dib ph2 link mid-gray dim" style="color: white;">Schedule</a>
+      <a href="#connect"  title="Connect" class="f6 dib ph2 link mid-gray dim" style="color: white;">Connect</a>
+      <a href="#judges"  title="Judges" class="f6 dib ph2 link mid-gray dim" style="color: white;">Judges</a>
+    </div>
+  </footer>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-to-top d-lg-none position-fixed ">
